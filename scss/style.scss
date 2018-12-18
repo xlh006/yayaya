@@ -1,0 +1,43 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: flex;
+}
+
+.frame > div {
+	flex: 1;
+	font-size: 0;
+	font-weight: bold;
+	line-height: 400px;
+	background: #f72;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(255,255,255,0);
+	transition: all 0.5s;
+	&:hover {
+		flex: 6;
+		font-size: 2rem;
+		color: rgba(255,255,255,1);
+	}
+	&:nth-child(2n) {
+		background: #444;
+	}
+}
+
+
